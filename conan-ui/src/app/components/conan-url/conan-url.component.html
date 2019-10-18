@@ -1,0 +1,26 @@
+<div class="container h-100 w-100">
+	<div class="d-flex justify-content-center h-100 w-100">
+		<div class="card my-auto border-1" >
+			<div class="card-body text-center">
+        <img src="assets/img/conan.png" class="mb-2" width="50" height="53" />
+        <h5 class="font-weight-bold mb-5 mt-2">Conan UI Repository Viewer</h5>
+        <form>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-primary"><i class="fa fa-link" style="color: white"></i></span>
+            </div>
+
+            <input type="text" class="form-control" name="conan_url" placeholder="Conan REST-API URL" [(ngModel)]="conan_url" [class.is-invalid]="valid === false">
+            <div class="input-group-append">
+              <button class="btn btn-primary" (click)="startConanUI()">Start</button>
+            </div>
+
+            <div class="invalid-feedback">
+              Please specify a valid URL to a Conan repository.
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
