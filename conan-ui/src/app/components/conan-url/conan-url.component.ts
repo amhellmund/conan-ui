@@ -9,7 +9,7 @@ import { ConanService} from '../../services/conan.service';
 })
 export class ConanUrlComponent implements OnInit {
 
-  conan_url : string;
+  conanUrl : string;
   valid = true;
 
   constructor(private conanService : ConanService) {}
@@ -18,7 +18,7 @@ export class ConanUrlComponent implements OnInit {
   }
 
   startConanUI() : void {
-    this.valid = this.conanService.is_valid_url(this.conan_url);
+    this.conanService.isValidUrl(this.conanUrl).subscribe(valid => this.valid = valid);
   }
 
 }

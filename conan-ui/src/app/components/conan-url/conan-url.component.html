@@ -10,9 +10,9 @@
               <span class="input-group-text bg-primary"><i class="fa fa-link" style="color: white"></i></span>
             </div>
 
-            <input type="text" class="form-control" name="conan_url" placeholder="Conan REST-API URL" [(ngModel)]="conan_url" [class.is-invalid]="valid === false">
+            <input type="text" class="form-control" name="conan_url" placeholder="Conan REST-API URL" [(ngModel)]="conanUrl" [class.is-invalid]="valid === false">
             <div class="input-group-append">
-              <button class="btn btn-primary" (click)="startConanUI()">Start</button>
+              <button class="btn btn-primary" (click)="startConanUI()"><b>Start</b></button>
             </div>
 
             <div class="invalid-feedback">
